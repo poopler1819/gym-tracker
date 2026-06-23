@@ -11,49 +11,89 @@ const EXERCISES = {
     sets: "4", reps: "6–8", baseWeight: 50, inc: 2.5, unit: "kg total",
     guide: "Set the Smith machine bar at chest height. Lie flat, grip slightly wider than shoulder-width. Lower bar to mid-chest (2–3 sec), press back up explosively. Keep shoulder blades pinched together throughout. Bar should touch just below your nipple line.",
     warmup: "1 set × 10 reps with bar only (15 kg), then 1 set × 6 reps at half your working weight before your main sets.",
-    alt: "Dumbbell Flat Press — same movement pattern, greater range of motion at the bottom. Use same total weight split across two dumbbells.",
+    swaps: [
+      "Dumbbell Flat Press",
+      "Machine Chest Press",
+      "Cable Chest Press (low pulley)",
+      "Push-Up (slow tempo)",
+    ],
   },
   "Incline Bench Press (Smith)": {
     sets: "4", reps: "8–10", baseWeight: 40, inc: 2.5, unit: "kg total",
     guide: "Set bench to 30–45°. Grip slightly narrower than flat bench. Lower bar to upper chest (not neck). Incline targets the upper chest — the area that makes your chest look fuller from the front. Control the descent; don't bounce off the chest.",
     warmup: "1 set × 10 reps bar only, then 1 light set at 60% working weight.",
-    alt: "Incline Dumbbell Press — set bench to 30–45°, press dumbbells up and in. Easier to set up than the Smith on incline.",
+    swaps: [
+      "Incline Dumbbell Press",
+      "Cable Incline Fly",
+      "Machine Incline Press",
+      "Pike Push-Up",
+    ],
   },
   "Low Cable Fly": {
     sets: "3", reps: "12–15", baseWeight: 8, inc: 1, unit: "kg each side",
     guide: "Set both cables at the lowest position (near the floor). Stand in the centre, step forward slightly. With a slight elbow bend, bring your hands upward and inward in an arc, meeting at chest height. This targets the lower chest — the same area that decline bench would — but without any decline setup. Squeeze the chest hard at the top, lower slowly. Keep your torso still throughout.",
     warmup: "No separate warm-up needed if done after press movements.",
-    alt: "Pec Deck Machine (lower setting) — sit at the pec deck, set the arms low to replicate the upward fly arc targeting the lower chest.",
+    swaps: [
+      "Pec Deck Machine (lower setting)",
+      "Dumbbell Fly (flat bench)",
+      "Cable Crossover (high to low)",
+      "Machine Chest Fly",
+    ],
   },
   "Incline Dumbbell Press": {
     sets: "4", reps: "8–10", baseWeight: 14, inc: 1.25, unit: "kg each",
     guide: "Set bench to 30–45°. Hold dumbbells at chest level, elbows at 45° from your body. Press upward and slightly inward, bringing dumbbells close together at the top without touching. Lower slowly until you feel a full stretch in the upper chest. The incline angle targets the upper chest — the area that makes your chest look fuller when wearing a shirt. Control every rep.",
     warmup: "1 set × 10 reps at 8 kg each before working sets.",
-    alt: "Incline Smith Machine Press — same angle and movement, just uses the bar instead of dumbbells. Good if dumbbells feel unstable.",
+    swaps: [
+      "Incline Smith Machine Press",
+      "Cable Incline Press",
+      "Machine Incline Press",
+      "Incline Push-Up",
+    ],
   },
   "Close-Grip Bench Press (Smith)": {
     sets: "3", reps: "8–10", baseWeight: 35, inc: 2.5, unit: "kg total",
     guide: "Hands shoulder-width or slightly closer. This shifts load from chest to triceps — great for overall pressing strength and arm thickness. Keep elbows tucked close to your body throughout. Full range of motion.",
     warmup: "1 set × 10 reps bar only.",
-    alt: "EZ Bar Skull Crusher superset with Close-Grip Press — finish the skull crushers and immediately switch to close-grip pressing the same bar for extra tricep volume.",
+    swaps: [
+      "EZ Bar Skull Crusher",
+      "Tricep Rope Pushdown",
+      "Machine Tricep Press",
+      "Overhead Dumbbell Tricep Extension",
+    ],
   },
   "Cable Fly (mid)": {
     sets: "3", reps: "12–15", baseWeight: 10, inc: 1.25, unit: "kg each side",
     guide: "Set cables at chest height. Step forward, lean slightly. Arms wide like a hug, slight bend in elbows — keep that bend fixed. Bring hands together in front of chest, squeeze hard for 1 second at the peak. Slowly return. This is an isolation move — focus on feeling the chest, not just moving the weight.",
     warmup: "No separate warm-up needed if done after press movements.",
-    alt: "Pec Deck Machine — sit upright, bring the pads together in front of your chest. Same isolation movement without needing a cable setup.",
+    swaps: [
+      "Pec Deck Machine",
+      "Dumbbell Fly (flat bench)",
+      "Low Cable Fly",
+      "Machine Chest Fly",
+    ],
   },
   "Dumbbell Pullover": {
     sets: "3", reps: "10–12", baseWeight: 14, inc: 1, unit: "kg",
     guide: "Lie across a bench (upper back only on bench, hips dropped). Hold one dumbbell with both hands above chest. Lower it back over your head in an arc, feeling a deep stretch in the chest and lats. Pull back over the chest. Keep a slight bend in elbows throughout. Great for expanding the ribcage.",
     warmup: "Start with 2–3 reps at a lighter weight to feel the stretch.",
-    alt: "Cable Straight-Arm Pulldown — stand at a high cable, arms extended, pull down in an arc to your thighs. Same lat and chest stretch as the pullover.",
+    swaps: [
+      "Cable Straight-Arm Pulldown",
+      "Pec Deck Machine",
+      "Cable Fly (mid)",
+      "Machine Chest Press",
+    ],
   },
   "Push-Up (weighted)": {
     sets: "3", reps: "12–15", baseWeight: 10, inc: 2.5, unit: "kg plate on back",
     guide: "Have a training partner place a weight plate on your upper back, or use a weighted vest. Standard push-up form — hands slightly wider than shoulders, body in a straight line from head to heels. Lower chest to 2–3 cm from floor, press up fully. If no partner, do slow push-ups (3 sec down, 1 sec up) for the same effect.",
     warmup: "5 bodyweight push-ups before loading.",
-    alt: "Machine Chest Press — use the plate-loaded or selectorised chest press machine as a direct substitute. Same push pattern, easier to load.",
+    swaps: [
+      "Machine Chest Press",
+      "Dumbbell Flat Press",
+      "Cable Chest Press",
+      "Bodyweight Push-Up (slow tempo)",
+    ],
   },
 
   // ── BACK ───────────────────────────────────────────────────────────────────
@@ -61,49 +101,89 @@ const EXERCISES = {
     sets: "4", reps: "8–10", baseWeight: 18, inc: 1.25, unit: "kg each",
     guide: "Hinge at hips until torso is ~45°, slight knee bend. Hold dumbbells hanging down. Row both to your lower ribs simultaneously, driving elbows back and up. Squeeze shoulder blades together at the top for 1 second. Lower slowly. Keep your back flat — not rounded. This is your primary back thickness builder.",
     warmup: "1 set × 10 reps at 10 kg each before working sets.",
-    alt: "Single-Arm Dumbbell Row — same hinge position, one arm at a time with support on a bench. Allows heavier load and better mind-muscle connection per side.",
+    swaps: [
+      "Single-Arm Dumbbell Row",
+      "Chest-Supported Dumbbell Row",
+      "Seated Cable Row",
+      "T-Bar Row",
+    ],
   },
   "Bent-Over Barbell Row (Smith)": {
     sets: "4", reps: "8–10", baseWeight: 40, inc: 2.5, unit: "kg total",
     guide: "Hinge at hips, overhand grip just outside shoulder-width. Pull bar to your lower abs (not upper chest). Elbows drive back and slightly flared. The Smith machine keeps the path fixed — use this to your advantage by focusing entirely on squeezing the back. Return slowly.",
     warmup: "1 warm-up set × 10 reps bar only.",
-    alt: "T-Bar Row — load one end of a barbell into a landmine or corner, straddle it and row both hands to your chest. Similar compound back stimulus.",
+    swaps: [
+      "T-Bar Row",
+      "Seated Cable Row",
+      "Single-Arm Dumbbell Row",
+      "Machine Row",
+    ],
   },
   "Lat Pulldown": {
     sets: "4", reps: "8–10", baseWeight: 35, inc: 2.5, unit: "kg stack",
     guide: "Sit with thighs under pads. Wide overhand grip. Lean back slightly (15°). Pull bar to your upper chest, leading with your elbows — imagine pushing your elbows into your back pockets. Squeeze lats at the bottom. Slowly return to full arm extension. This builds the V-taper width.",
     warmup: "1 set × 10 reps at 15 kg before working weight.",
-    alt: "Assisted Pull-Up Machine — use the counterweighted machine to do pull-ups with the same lat-dominant movement. Reduce assistance as you get stronger.",
+    swaps: [
+      "Assisted Pull-Up Machine",
+      "Single-Arm Lat Pulldown",
+      "Straight-Arm Pulldown",
+      "Cable Row (wide grip)",
+    ],
   },
   "Pull-Up": {
     sets: "4", reps: "6–10", baseWeight: 0, inc: 0, unit: "bodyweight",
     guide: "Hang with overhand grip, hands shoulder-width or wider. Pull until chin clears the bar, driving elbows down and back. Fully extend arms at the bottom. If you can't do 6 reps, use the assisted pull-up machine or a resistance band looped over the bar for support. Add a weight belt when you can do 10+ easily.",
     warmup: "2–3 slow negatives (jump to top, lower slowly over 5 sec).",
-    alt: "Assisted Pull-Up Machine — identical movement with a counterweight to reduce effective bodyweight. Step down assistance by 5 kg every 2 weeks.",
+    swaps: [
+      "Assisted Pull-Up Machine",
+      "Lat Pulldown",
+      "Single-Arm Lat Pulldown",
+      "Inverted Row (Smith Machine)",
+    ],
   },
   "Seated Cable Row": {
     sets: "3", reps: "10–12", baseWeight: 30, inc: 2.5, unit: "kg stack",
     guide: "Sit upright, feet on platform, slight knee bend. Row the handle to your navel — not your chest. Elbows travel back close to your sides. At the end position, squeeze shoulder blades together and hold 1 second. Return with control, letting your shoulder blades protract fully at the front — this full range builds more thickness.",
     warmup: "No separate warm-up if done after compound rows.",
-    alt: "Chest-Supported Dumbbell Row — lie face-down on an incline bench, row both dumbbells up simultaneously. Removes lower back fatigue and isolates the mid-back.",
+    swaps: [
+      "Chest-Supported Dumbbell Row",
+      "Single-Arm Dumbbell Row",
+      "Machine Row",
+      "Bent-Over Dumbbell Row",
+    ],
   },
   "Single-Arm DB Row": {
     sets: "3", reps: "10–12 each", baseWeight: 20, inc: 1.25, unit: "kg",
     guide: "Place one hand and same-side knee on a bench. Other foot on floor. Dumbbell hanging. Row to your hip — not your armpit. Think about driving your elbow toward the ceiling. At the top, your elbow should be higher than your back. Hold 1 second, lower slowly. Keep hips square.",
     warmup: "2–3 reps at light weight to rehearse the path.",
-    alt: "Cable Single-Arm Row — use a low cable with a D-handle. Same unilateral movement, constant tension throughout the range of motion.",
+    swaps: [
+      "Cable Single-Arm Row",
+      "Chest-Supported Dumbbell Row",
+      "Machine Row",
+      "Seated Cable Row",
+    ],
   },
   "Face Pull": {
     sets: "3", reps: "15", baseWeight: 12, inc: 1.25, unit: "kg stack",
     guide: "Set cable at forehead height, use rope attachment. Pull rope to your face, splitting it so hands go either side of your head, elbows flare high and wide. This directly targets the rear delts and rotator cuff — critical for shoulder health and posture. Go light and focus on the squeeze. Never rush this one.",
     warmup: "Not required — light weight used throughout.",
-    alt: "Reverse Pec Deck — sit facing the machine, grab the handles and pull apart at shoulder height. Identical rear delt recruitment without needing a cable.",
+    swaps: [
+      "Reverse Pec Deck",
+      "Rear Delt Dumbbell Fly",
+      "Cable Rear Delt Fly",
+      "Bent-Over Rear Delt Fly",
+    ],
   },
   "Straight-Arm Pulldown": {
     sets: "3", reps: "12", baseWeight: 15, inc: 1.25, unit: "kg stack",
     guide: "Stand at cable, high pulley, overhand grip on bar or rope. Arms almost fully extended (slight elbow bend). Pull down in an arc to your thighs, keeping arms straight throughout. This isolates the lat without involving biceps — great for building that lower lat fullness. Lean forward slightly.",
     warmup: "Not required.",
-    alt: "Dumbbell Pullover on Bench — lie across a flat bench, hold one dumbbell overhead and arc it down to your chest. Hits the same lower lat stretch as the cable version.",
+    swaps: [
+      "Dumbbell Pullover (on bench)",
+      "Cable Pullover",
+      "Lat Pushdown (machine)",
+      "Seated Cable Row (straight arms)",
+    ],
   },
 
   // ── ARMS ───────────────────────────────────────────────────────────────────
@@ -111,49 +191,89 @@ const EXERCISES = {
     sets: "4", reps: "8–10", baseWeight: 20, inc: 1.25, unit: "kg total",
     guide: "Stand with EZ bar or straight bar. Underhand grip shoulder-width. Keep elbows pinned to your sides — they should not move forward. Curl to chin height, squeeze hard, lower slowly over 3 seconds. The slow descent is where most of the growth happens. Don't swing your back.",
     warmup: "1 set × 12 reps at bar only (10 kg).",
-    alt: "EZ Bar Curl — same standing curl movement, the angled grip reduces wrist strain and shifts load slightly to the outer bicep head.",
+    swaps: [
+      "EZ Bar Curl",
+      "Dumbbell Bicep Curl",
+      "Cable Curl (low pulley)",
+      "Preacher Curl Machine",
+    ],
   },
   "Incline Dumbbell Curl": {
     sets: "3", reps: "10–12", baseWeight: 9, inc: 1, unit: "kg each",
     guide: "Set bench to 60°. Sit back and let arms hang behind your torso. This pre-stretches the long head of the bicep for a deeper range of motion. Curl without letting elbows travel forward. You'll feel a much stronger stretch at the bottom than standing curls — that's the point. Go lighter than you think.",
     warmup: "Not required — done after barbell curls.",
-    alt: "Cable Curl (low pulley) — stand at a low cable with a straight bar or rope. Constant tension throughout the curl, especially at the top where dumbbells go slack.",
+    swaps: [
+      "Cable Curl (low pulley)",
+      "Preacher Curl Machine",
+      "Concentration Curl",
+      "Spider Curl",
+    ],
   },
   "Hammer Curl": {
     sets: "4", reps: "10–12", baseWeight: 10, inc: 1, unit: "kg each",
     guide: "Neutral grip (palms facing each other). Curl upward keeping the neutral grip throughout — don't rotate your wrist. This targets the brachialis (muscle under the bicep) which pushes the bicep up, making your arms look thicker. Also builds forearm size. Keep elbows fixed.",
     warmup: "Not required.",
-    alt: "Rope Cable Curl — attach a rope to a low cable, curl with a neutral grip. Adds constant tension compared to dumbbells and hits the brachialis equally well.",
+    swaps: [
+      "Rope Cable Curl (neutral grip)",
+      "Cross-Body Hammer Curl",
+      "Reverse Dumbbell Curl",
+      "Machine Curl (neutral grip)",
+    ],
   },
   "Concentration Curl": {
     sets: "3", reps: "10–12 each", baseWeight: 8, inc: 0.5, unit: "kg each",
     guide: "Sit on bench, feet wide. Rest back of upper arm on your inner thigh. Curl to your shoulder. This eliminates all momentum — pure bicep contraction. Hold the peak for 2 seconds each rep. At 70 kg your biceps are relatively fresh — this should give you a serious pump. Go slowly.",
     warmup: "Not required.",
-    alt: "Preacher Curl Machine — rests your upper arm on a pad eliminating all swing. Same strict isolation as a concentration curl but with a more stable setup.",
+    swaps: [
+      "Preacher Curl Machine",
+      "Spider Curl",
+      "Cable Curl (low pulley)",
+      "Single-Arm Cable Curl",
+    ],
   },
   "Skull Crusher (EZ Bar)": {
     sets: "4", reps: "8–10", baseWeight: 20, inc: 1.25, unit: "kg total",
     guide: "Lie on bench, EZ bar above your chest. Lower bar to your forehead (hence the name) by bending elbows only — upper arms stay vertical and still. Press back up to full extension. This is the best long-head tricep builder. Keep upper arms perpendicular to the floor throughout. Use a spotter if possible.",
     warmup: "1 set × 10 reps at bar only (10 kg).",
-    alt: "Cable Overhead Tricep Extension — attach a rope to a high cable, face away and extend arms overhead. Same long-head stretch as skull crushers with constant cable tension.",
+    swaps: [
+      "Cable Overhead Tricep Extension",
+      "Dumbbell Skull Crusher",
+      "Machine Tricep Extension",
+      "Tricep Rope Pushdown",
+    ],
   },
   "Tricep Rope Pushdown": {
     sets: "4", reps: "10–12", baseWeight: 15, inc: 1.25, unit: "kg stack",
     guide: "Set cable high, attach rope. Grip rope with thumbs up. Elbows pinned to sides. Push rope down, splitting the ends apart at the bottom for full contraction. Hold 1 second at full extension. Return slowly. Keep your torso slightly forward leaning. This hits the lateral head — the part that makes your tricep look wide from the back.",
     warmup: "Not required.",
-    alt: "V-Bar Pushdown — swap the rope for a V-bar attachment on the same cable. Slightly different grip angle that emphasises the medial tricep head.",
+    swaps: [
+      "V-Bar Pushdown",
+      "Single-Arm Cable Pushdown",
+      "Machine Tricep Press",
+      "Overhead Tricep Extension",
+    ],
   },
   "Overhead Tricep Extension": {
     sets: "3", reps: "10–12", baseWeight: 14, inc: 1, unit: "kg",
     guide: "Hold one dumbbell with both hands overhead, elbows framing your head. Lower behind your head by bending only at the elbows, feeling a deep stretch in the long head of the tricep. Press back up. The long head runs along the back of the arm — training it overhead is the only way to fully stretch it. Keep your elbows pointed forward, not flaring.",
     warmup: "2 slow reps at lighter weight to feel the stretch.",
-    alt: "EZ Bar Overhead Tricep Extension — same movement with an EZ bar for a more comfortable wrist angle. Allows heavier loading than a single dumbbell.",
+    swaps: [
+      "EZ Bar Overhead Extension",
+      "Cable Overhead Tricep Extension",
+      "Machine Tricep Extension",
+      "Skull Crusher (EZ Bar)",
+    ],
   },
   "Reverse Curl": {
     sets: "2", reps: "15", baseWeight: 10, inc: 0.5, unit: "kg total",
     guide: "Overhand grip (palms facing down) on a barbell or EZ bar. Curl the same way as a normal curl. This targets the brachioradialis and forearm extensors — building forearm thickness that makes your whole arm look bigger. Keep elbows fixed. Much lighter than regular curls is normal.",
     warmup: "Not required.",
-    alt: "EZ Bar Reverse Curl — the angled EZ bar grip is easier on the wrists than a straight bar while hitting the same brachioradialis and forearm extensors.",
+    swaps: [
+      "EZ Bar Reverse Curl",
+      "Cable Reverse Curl",
+      "Hammer Curl",
+      "Wrist Roller (forearm focus)",
+    ],
   },
 
   // ── LEGS ───────────────────────────────────────────────────────────────────
@@ -161,43 +281,78 @@ const EXERCISES = {
     sets: "4", reps: "10–12 each", baseWeight: 12, inc: 1.25, unit: "kg each hand",
     guide: "Use a bench or box at knee height. Step up leading with one foot, drive through the heel to stand fully upright on the box. Step down with control. Alternate legs. Keep your torso upright. This unilateral movement corrects muscle imbalances between legs. Feel the quad and glute of the working leg — don't push off the back foot.",
     warmup: "5 bodyweight step-ups each leg before loading.",
-    alt: "Smith Machine Step-Up — hold the bar across your upper back on the Smith machine for a more stable and heavier loaded step-up.",
+    swaps: [
+      "Smith Machine Step-Up",
+      "Leg Press",
+      "Walking Lunge",
+      "Smith Machine Reverse Lunge",
+    ],
   },
   "Glute Bridge / Hip Thrust": {
     sets: "4", reps: "10–12", baseWeight: 30, inc: 2.5, unit: "kg across hips",
     guide: "Upper back on bench, barbell across hip crease (use a pad). Feet flat on floor, shoulder-width. Drive hips up by squeezing glutes hard — not by hyperextending your lower back. At the top, shins should be vertical, body forms a straight line from knees to shoulders. Hold top position 1–2 seconds. Lower slowly. This is the best glute builder and directly improves your leg appearance.",
     warmup: "10 bodyweight glute bridges on the floor before loading.",
-    alt: "Smith Machine Hip Thrust — same movement with the bar running in the Smith track. Easier to load heavy without a spotter and keeps the bar path fixed.",
+    swaps: [
+      "Smith Machine Hip Thrust",
+      "Cable Pull-Through",
+      "Single-Leg Hip Thrust",
+      "Leg Press (feet high and wide)",
+    ],
   },
   "Leg Press": {
     sets: "4", reps: "10–12", baseWeight: 60, inc: 5, unit: "kg",
     guide: "Feet shoulder-width on the platform, toes pointed slightly out. Lower the sled until knees reach 90° — not beyond. Press back up without locking your knees at the top. Keep your lower back pressed against the seat throughout. Don't let your hips lift off the seat at the bottom. A wider, higher foot placement targets glutes more; lower targets quads.",
     warmup: "1 set × 15 reps at 30 kg before working weight.",
-    alt: "Hack Squat Machine — similar quad-dominant push movement in a fixed track. Slightly more upright torso angle which reduces lower back involvement.",
+    swaps: [
+      "Hack Squat Machine",
+      "Smith Machine Reverse Lunge",
+      "Step-Up with Dumbbells",
+      "Walking Lunge",
+    ],
   },
   "Walking Lunge": {
     sets: "4", reps: "10 each leg", baseWeight: 10, inc: 1.25, unit: "kg each hand",
     guide: "Take a big step forward, lower your rear knee toward the floor (without touching), then step your back foot forward to begin the next rep. Keep your torso upright and core braced. Front knee should track over your toes, not caving inward. This builds quad size, glute size, and functional strength simultaneously. If space is limited, do reverse lunges in place.",
     warmup: "10 bodyweight lunges each leg before loading.",
-    alt: "Smith Machine Reverse Lunge — step backward under the Smith bar. The fixed path makes it easier to keep balance and allows heavier loading than dumbbells.",
+    swaps: [
+      "Smith Machine Reverse Lunge",
+      "Step-Up with Dumbbells",
+      "Leg Press",
+      "Split Squat (front foot elevated)",
+    ],
   },
   "Leg Curl (Machine)": {
     sets: "4", reps: "10–12", baseWeight: 25, inc: 2.5, unit: "kg stack",
     guide: "Lie face down on the machine. Pad should sit just above your heels. Curl your heels toward your glutes, squeezing the hamstrings hard at the top. Lower slowly — hamstrings respond extremely well to slow eccentrics. Don't let your hips lift off the pad at the top. Point toes slightly to feel the outer hamstring more.",
     warmup: "1 set × 15 reps at 10 kg.",
-    alt: "Seated Leg Curl Machine — if your gym has both lying and seated versions, the seated variant puts the hamstring in a greater stretch position and builds more mass.",
+    swaps: [
+      "Seated Leg Curl Machine",
+      "Single-Leg Lying Leg Curl",
+      "Cable Leg Curl (ankle strap)",
+      "Swiss Ball Leg Curl",
+    ],
   },
   "Leg Extension (Machine)": {
     sets: "3", reps: "12–15", baseWeight: 25, inc: 2.5, unit: "kg stack",
     guide: "Sit upright, pad across your shins just above the ankle. Extend legs to full lockout, squeezing the quad hard at the top. Hold 1 second. Lower slowly. This isolates the quad fully — no other muscle can help here. Don't swing or use momentum. If you feel knee discomfort, reduce range of motion slightly.",
     warmup: "Not required if done after leg press.",
-    alt: "Cable Leg Extension — attach an ankle strap to a low cable, stand facing away and extend your leg forward. Constant tension unlike the machine which is easier at the bottom.",
+    swaps: [
+      "Single-Leg Extension",
+      "Cable Leg Extension (ankle strap)",
+      "Leg Press (close stance)",
+      "Step-Up with Dumbbells",
+    ],
   },
   "Standing Calf Raise": {
     sets: "4", reps: "15–20", baseWeight: 40, inc: 5, unit: "kg",
     guide: "Use the calf raise machine or a Smith machine. Position toes forward or slightly outward. Rise onto the balls of your feet as high as possible, hold 1 second at the top. Lower slowly below the starting point for a full stretch — this bottom stretch is crucial for calf growth. Calves are worked in daily walking so they need both heavy weight and high reps to grow. Go slow.",
     warmup: "10 bodyweight calf raises on a step edge.",
-    alt: "Seated Calf Raise Machine — targets the soleus (deeper calf muscle) more than standing raises. Use both machines across your sessions for full calf development.",
+    swaps: [
+      "Seated Calf Raise Machine",
+      "Leg Press Calf Raise",
+      "Smith Machine Calf Raise",
+      "Single-Leg Calf Raise",
+    ],
   },
 
   // ── SHOULDERS ──────────────────────────────────────────────────────────────
@@ -205,108 +360,182 @@ const EXERCISES = {
     sets: "4", reps: "8–10", baseWeight: 16, inc: 1.25, unit: "kg each",
     guide: "Sit on a bench with back support. Dumbbells at ear level, elbows at 90°. Press straight up, bringing dumbbells close together at the top without touching. Lower back to ear level — full range. This is your primary shoulder mass builder. Don't press in front of your face — press straight overhead. Keep core tight to protect lower back.",
     warmup: "1 set × 10 reps at 8 kg each.",
-    alt: "Smith Machine Overhead Press — set the bench upright inside the Smith machine. Fixed bar path removes the stability demand and lets you focus purely on shoulder load.",
+    swaps: [
+      "Smith Machine Overhead Press",
+      "Arnold Press",
+      "Machine Shoulder Press",
+      "Cable Shoulder Press",
+    ],
   },
   "Arnold Press": {
     sets: "4", reps: "10–12", baseWeight: 12, inc: 1, unit: "kg each",
     guide: "Start with dumbbells at chin height, palms facing you. As you press up, rotate your wrists so palms face forward at the top. Reverse on the way down. This rotation recruits all three heads of the deltoid in one movement — front, side, and rear. Go lighter than your regular press. Control the rotation — don't just spin the wrists.",
     warmup: "Not required if done after shoulder press.",
-    alt: "Dumbbell Shoulder Press with rotation — if the full Arnold rotation feels awkward, do a partial rotation (palms facing in at the bottom, facing forward at the top). Same recruitment, simpler execution.",
+    swaps: [
+      "Seated DB Shoulder Press",
+      "Smith Machine Overhead Press",
+      "Machine Shoulder Press",
+      "Dumbbell Shoulder Press (partial rotation)",
+    ],
   },
   "Lateral Raise": {
     sets: "4", reps: "12–15", baseWeight: 8, inc: 0.5, unit: "kg each",
     guide: "Stand with dumbbells at sides. Raise arms out to the sides to shoulder height — lead with your elbows, not your hands. At the top, tilt dumbbells slightly so the front is lower than the back (like pouring a jug) — this protects the shoulder joint. Lower slowly over 3 seconds. This builds the side delt, which makes your shoulders look wide. Never go heavy here — strict form only.",
     warmup: "Not required.",
-    alt: "Cable Lateral Raise — attach D-handles to low cables, raise both arms simultaneously. Constant tension throughout compared to dumbbells which are easiest at the bottom.",
+    swaps: [
+      "Cable Lateral Raise",
+      "Machine Lateral Raise",
+      "Single-Arm Cable Lateral Raise",
+      "Leaning Cable Lateral Raise",
+    ],
   },
   "Front Raise": {
     sets: "3", reps: "12", baseWeight: 8, inc: 0.5, unit: "kg each",
     guide: "Stand, dumbbells in front of thighs. Raise one or both arms forward to shoulder height, thumbs up. Keep a slight elbow bend. Lower slowly. This targets the anterior (front) deltoid. Many people skip this but it adds fullness to the front of the shoulder. Don't swing; use a strict controlled movement.",
     warmup: "Not required.",
-    alt: "Cable Front Raise — use a low cable with a straight bar or rope. Constant tension through the full range, especially at the top where dumbbells feel lightest.",
+    swaps: [
+      "Cable Front Raise",
+      "Plate Front Raise",
+      "Incline Dumbbell Front Raise",
+      "Cable Crossover Front Raise",
+    ],
   },
   "Rear Delt Fly": {
     sets: "4", reps: "12–15", baseWeight: 8, inc: 0.5, unit: "kg each",
     guide: "Hinge forward at hips 90°, dumbbells hanging below chest. Raise arms out to sides like wings, leading with elbows. Squeeze shoulder blades together at the top. Lower slowly. The rear delt is the most neglected shoulder muscle — training it balances the shoulder, improves posture, and gives your shoulder that 3D rounded look from behind. Go light and feel every rep.",
     warmup: "Not required.",
-    alt: "Reverse Pec Deck — sit facing the machine, grip the handles and pull apart to the sides. The most direct machine substitute for rear delt flys with easy weight adjustment.",
+    swaps: [
+      "Reverse Pec Deck",
+      "Cable Rear Delt Fly",
+      "Face Pull",
+      "Bent-Over Dumbbell Rear Fly",
+    ],
   },
   "Dumbbell Shrug": {
     sets: "4", reps: "12–15", baseWeight: 20, inc: 2.5, unit: "kg each",
     guide: "Hold heavy dumbbells at sides. Shrug your shoulders straight up toward your ears as high as possible. Hold 1 second at the top. Lower slowly. Do not roll your shoulders — straight up and down only. This builds the trapezius which connects your neck to your shoulders, giving that powerful thick upper back look.",
     warmup: "Not required.",
-    alt: "Smith Machine Shrug or Barbell Shrug — allows heavier loading than dumbbells. Set the bar at hip height, grip and shrug straight up. Good for progressive overload on traps.",
+    swaps: [
+      "Smith Machine Shrug",
+      "Barbell Shrug",
+      "Cable Shrug",
+      "Machine Shrug",
+    ],
   },
   "Cable Lateral Raise": {
     sets: "3", reps: "12–15 each", baseWeight: 5, inc: 0.5, unit: "kg each side",
     guide: "Stand side-on to a low cable. Cross-body grip (use the hand furthest from the cable). Raise arm out to the side to shoulder height. The cable provides constant tension throughout the movement — unlike dumbbells which are easiest at the bottom. This is why it's worth doing after dumbbell laterals. Keep elbow slightly bent, wrist neutral.",
     warmup: "Not required.",
-    alt: "Machine Lateral Raise — many gyms have a dedicated lateral raise machine. Provides the same isolated side delt stimulus with a guided movement arc.",
+    swaps: [
+      "Machine Lateral Raise",
+      "Lateral Raise",
+      "Single-Arm Cable Lateral Raise",
+      "Leaning Cable Lateral Raise",
+    ],
   },
 };
 
 // ─── WEEKLY EXERCISE ROTATION ────────────────────────────────────────────────
 // Each muscle group rotates exercises each week for variety + full development
+// REST_TIME: compound = 120s, isolation = 90s
+const REST_TIMES = {
+  "Flat Bench Press (Smith)": 120,
+  "Incline Bench Press (Smith)": 120,
+  "Close-Grip Bench Press (Smith)": 120,
+  "Incline Dumbbell Press": 120,
+  "Low Cable Fly": 90,
+  "Cable Fly (mid)": 90,
+  "Double DB Bent-Over Row": 120,
+  "Bent-Over Barbell Row (Smith)": 120,
+  "Lat Pulldown": 120,
+  "Pull-Up": 120,
+  "Seated Cable Row": 90,
+  "Single-Arm DB Row": 90,
+  "Face Pull": 90,
+  "Straight-Arm Pulldown": 90,
+  "Barbell Bicep Curl": 90,
+  "Incline Dumbbell Curl": 90,
+  "Hammer Curl": 90,
+  "Concentration Curl": 90,
+  "Skull Crusher (EZ Bar)": 90,
+  "Tricep Rope Pushdown": 90,
+  "Overhead Tricep Extension": 90,
+  "Step-Up with Dumbbells": 120,
+  "Glute Bridge / Hip Thrust": 120,
+  "Leg Press": 120,
+  "Walking Lunge": 120,
+  "Leg Curl (Machine)": 90,
+  "Leg Extension (Machine)": 90,
+  "Standing Calf Raise": 90,
+  "Seated DB Shoulder Press": 120,
+  "Arnold Press": 120,
+  "Lateral Raise": 90,
+  "Rear Delt Fly": 90,
+  "Front Raise": 90,
+  "Dumbbell Shrug": 90,
+  "Cable Lateral Raise": 90,
+};
+
 const WEEKLY_ROTATION = {
   Chest: [
-    ["Flat Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Dumbbell Pullover", "Push-Up (weighted)"],         // Wk1
-    ["Incline Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Low Cable Fly", "Push-Up (weighted)"],  // Wk2
-    ["Flat Bench Press (Smith)", "Incline Dumbbell Press", "Close-Grip Bench Press (Smith)", "Cable Fly (mid)", "Dumbbell Pullover"], // Wk3
-    ["Low Cable Fly", "Incline Bench Press (Smith)", "Cable Fly (mid)", "Push-Up (weighted)", "Dumbbell Pullover"],  // Wk4
-    ["Flat Bench Press (Smith)", "Close-Grip Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Dumbbell Pullover"], // Wk5
-    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Low Cable Fly", "Cable Fly (mid)", "Push-Up (weighted)"], // Wk6
-    ["Flat Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Dumbbell Pullover", "Push-Up (weighted)"],         // Wk7 (repeat Wk1 heavier)
-    ["Incline Bench Press (Smith)", "Close-Grip Bench Press (Smith)", "Cable Fly (mid)", "Dumbbell Pullover", "Push-Up (weighted)"], // Wk8
-    ["Flat Bench Press (Smith)", "Low Cable Fly", "Incline Dumbbell Press", "Cable Fly (mid)", "Dumbbell Pullover"], // Wk9
-    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Cable Fly (mid)", "Push-Up (weighted)", "Dumbbell Pullover"],     // Wk10 deload
+    ["Flat Bench Press (Smith)", "Incline Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Low Cable Fly"],         // Wk1
+    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Incline Dumbbell Press", "Low Cable Fly", "Cable Fly (mid)"],          // Wk2
+    ["Flat Bench Press (Smith)", "Incline Bench Press (Smith)", "Close-Grip Bench Press (Smith)", "Cable Fly (mid)", "Low Cable Fly"],  // Wk3
+    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Incline Dumbbell Press", "Low Cable Fly", "Cable Fly (mid)"],          // Wk4
+    ["Flat Bench Press (Smith)", "Close-Grip Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Low Cable Fly"],       // Wk5
+    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Low Cable Fly", "Incline Dumbbell Press", "Cable Fly (mid)"],          // Wk6
+    ["Flat Bench Press (Smith)", "Incline Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Low Cable Fly"],          // Wk7
+    ["Incline Bench Press (Smith)", "Close-Grip Bench Press (Smith)", "Flat Bench Press (Smith)", "Low Cable Fly", "Cable Fly (mid)"],  // Wk8
+    ["Flat Bench Press (Smith)", "Incline Bench Press (Smith)", "Incline Dumbbell Press", "Low Cable Fly", "Cable Fly (mid)"],          // Wk9
+    ["Incline Bench Press (Smith)", "Flat Bench Press (Smith)", "Incline Dumbbell Press", "Cable Fly (mid)", "Low Cable Fly"],          // Wk10 deload
   ],
   Back: [
-    ["Lat Pulldown", "Double DB Bent-Over Row", "Seated Cable Row", "Face Pull", "Straight-Arm Pulldown"],
-    ["Pull-Up", "Bent-Over Barbell Row (Smith)", "Single-Arm DB Row", "Face Pull", "Straight-Arm Pulldown"],
-    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"],
-    ["Pull-Up", "Double DB Bent-Over Row", "Seated Cable Row", "Face Pull", "Straight-Arm Pulldown"],
-    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Single-Arm DB Row", "Seated Cable Row", "Face Pull"],
-    ["Pull-Up", "Double DB Bent-Over Row", "Bent-Over Barbell Row (Smith)", "Face Pull", "Straight-Arm Pulldown"],
-    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Face Pull", "Single-Arm DB Row"],
-    ["Pull-Up", "Double DB Bent-Over Row", "Single-Arm DB Row", "Face Pull", "Straight-Arm Pulldown"],
-    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"],
-    ["Lat Pulldown", "Double DB Bent-Over Row", "Seated Cable Row", "Face Pull", "Straight-Arm Pulldown"],
+    ["Lat Pulldown", "Double DB Bent-Over Row", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"],       // Wk1
+    ["Pull-Up", "Bent-Over Barbell Row (Smith)", "Single-Arm DB Row", "Seated Cable Row", "Face Pull"],      // Wk2
+    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"], // Wk3
+    ["Pull-Up", "Double DB Bent-Over Row", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Face Pull"],// Wk4
+    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Single-Arm DB Row", "Seated Cable Row", "Face Pull"], // Wk5
+    ["Pull-Up", "Double DB Bent-Over Row", "Bent-Over Barbell Row (Smith)", "Single-Arm DB Row", "Face Pull"],// Wk6
+    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Seated Cable Row", "Double DB Bent-Over Row", "Face Pull"], // Wk7
+    ["Pull-Up", "Double DB Bent-Over Row", "Single-Arm DB Row", "Seated Cable Row", "Face Pull"],            // Wk8
+    ["Lat Pulldown", "Bent-Over Barbell Row (Smith)", "Double DB Bent-Over Row", "Seated Cable Row", "Face Pull"], // Wk9
+    ["Lat Pulldown", "Double DB Bent-Over Row", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"],       // Wk10 deload
   ],
   Arms: [
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl", "Overhead Tricep Extension"],
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Reverse Curl", "Overhead Tricep Extension"],
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl", "Reverse Curl"],
-    ["Hammer Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown", "Concentration Curl"],
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Incline Dumbbell Curl", "Overhead Tricep Extension"],
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Concentration Curl", "Tricep Rope Pushdown", "Reverse Curl", "Overhead Tricep Extension"],
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl", "Overhead Tricep Extension"],
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown", "Reverse Curl"],
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl", "Overhead Tricep Extension"],
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl", "Overhead Tricep Extension"],
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk1
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Concentration Curl"], // Wk2
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl"],// Wk3
+    ["Hammer Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],  // Wk4
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Incline Dumbbell Curl"],      // Wk5
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Concentration Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"], // Wk6
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk7
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],// Wk8
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl"],// Wk9
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk10 deload
   ],
   Legs: [
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Walking Lunge", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Walking Lunge", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)", "Leg Extension (Machine)", "Standing Calf Raise"],
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk1
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Walking Lunge"],              // Wk2
+    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Walking Lunge", "Leg Curl (Machine)"],              // Wk3
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge"],              // Wk4
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk5
+    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Walking Lunge"],              // Wk6
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk7
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge"],              // Wk8
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk9
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk10 deload
   ],
   Shoulders: [
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
-    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug", "Cable Lateral Raise", "Front Raise"],
-    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
-    ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Dumbbell Shrug", "Cable Lateral Raise", "Front Raise"],
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
-    ["Seated DB Shoulder Press", "Rear Delt Fly", "Arnold Press", "Lateral Raise", "Dumbbell Shrug", "Cable Lateral Raise", "Front Raise"],
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
-    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug", "Cable Lateral Raise", "Front Raise"],
-    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug", "Front Raise", "Cable Lateral Raise"],
+    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk1
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Front Raise"],      // Wk2
+    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug"],   // Wk3
+    ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Front Raise"],      // Wk4
+    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk5
+    ["Seated DB Shoulder Press", "Rear Delt Fly", "Arnold Press", "Lateral Raise", "Front Raise"],      // Wk6
+    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk7
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Front Raise"],      // Wk8
+    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug"],   // Wk9
+    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk10 deload
   ],
 };
 
@@ -400,6 +629,9 @@ const WEEK_LABELS = {
 const STORAGE_KEY = "workout-completed-v1";
 const EDITS_KEY = "workout-edits-v1";
 const LOGS_KEY = "workout-logs-v1";
+const ALT_SWAPS_KEY = "workout-alt-swaps-v1";
+const PROGRESSION_KEY = "workout-progression-v1";
+const EX_DONE_KEY = "workout-ex-done-v1";
 const ADMIN_PIN = "1989";
 
 export default function App() {
@@ -588,24 +820,28 @@ export default function App() {
 
   const getLogKey = (schedIdx, exIdx) => `${schedIdx}-${exIdx}`;
 
-  const openLog = (schedIdx, exIdx, numSets) => {
+  const [activeLogMeta, setActiveLogMeta] = useState({ exName: "", baseWeight: "" });
+
+  const openLog = (schedIdx, exIdx, numSets, exName, baseWeight) => {
     const key = getLogKey(schedIdx, exIdx);
     const existing = logs[key] || [];
-    // Pre-fill draft with existing entries or empty slots
     const draft = Array.from({ length: numSets }, (_, i) => ({
       weight: existing[i]?.weight || "",
       reps: existing[i]?.reps || "",
-      note: existing[i]?.note || "",
+      feeling: existing[i]?.feeling || "",
     }));
     setLogDraft(draft);
     setActiveLog(key);
+    setActiveLogMeta({ exName: exName || "", baseWeight: baseWeight || "" });
   };
 
   const saveLog = (key) => {
-    const filled = logDraft.filter(s => s.weight || s.reps);
-    const newLogs = { ...logs, [key]: filled.length ? logDraft : [] };
+    const newLogs = { ...logs, [key]: logDraft };
     setLogs(newLogs);
     saveLogsToStorage(newLogs);
+    if (activeLogMeta.exName) {
+      computeProgression(activeLogMeta.exName, logDraft, activeLogMeta.baseWeight);
+    }
     setActiveLog(null);
   };
 
@@ -619,6 +855,162 @@ export default function App() {
 
   const updateLogDraft = (setIdx, field, value) => {
     setLogDraft(prev => prev.map((s, i) => i === setIdx ? { ...s, [field]: value } : s));
+  };
+
+  // ── Exercise done ticks ──
+  // exDone: { "scheduleIdx-exIdx": true }
+  const [exDone, setExDone] = useState({});
+
+  useState(() => {
+    (async () => {
+      try {
+        const v = localStorage.getItem(EX_DONE_KEY);
+        if (v) { const p = JSON.parse(v); if (p && typeof p === "object") setExDone(p); }
+      } catch (e) {}
+    })();
+  }, []);
+
+  const saveExDone = (newDone) => {
+    try { localStorage.setItem(EX_DONE_KEY, JSON.stringify(newDone)); } catch (e) {}
+  };
+
+  const toggleExDone = (schedIdx, exIdx, exName) => {
+    const key = `${schedIdx}-${exIdx}`;
+    const newDone = { ...exDone };
+    if (newDone[key]) {
+      delete newDone[key];
+      cancelTimer();
+    } else {
+      newDone[key] = true;
+      if (exName) startRestTimer(exName);
+    }
+    setExDone(newDone);
+    saveExDone(newDone);
+  };
+
+  const isExDone = (schedIdx, exIdx) => !!exDone[`${schedIdx}-${exIdx}`];
+
+  // ── Rest timer state ──
+  const [restTimer, setRestTimer] = useState(null); // { seconds, total, exName }
+  const [timerInterval, setTimerInterval] = useState(null);
+
+  const startRestTimer = (exName) => {
+    if (timerInterval) clearInterval(timerInterval);
+    const seconds = REST_TIMES[exName] || 90;
+    setRestTimer({ seconds, total: seconds, exName });
+    const interval = setInterval(() => {
+      setRestTimer(prev => {
+        if (!prev || prev.seconds <= 1) {
+          clearInterval(interval);
+          return null;
+        }
+        return { ...prev, seconds: prev.seconds - 1 };
+      });
+    }, 1000);
+    setTimerInterval(interval);
+  };
+
+  const cancelTimer = () => {
+    if (timerInterval) clearInterval(timerInterval);
+    setRestTimer(null);
+    setTimerInterval(null);
+  };
+
+  // ── Swap selection state ──
+  // swapSelections: { "scheduleIdx-exIdx": "Exercise Name" | null }
+  const [swapSelections, setSwapSelections] = useState({});
+  const [openSwapPicker, setOpenSwapPicker] = useState(null); // "scheduleIdx-exIdx"
+
+  useState(() => {
+    (async () => {
+      try {
+        const v = localStorage.getItem(ALT_SWAPS_KEY);
+        if (v) { const p = JSON.parse(v); if (p && typeof p === "object") setSwapSelections(p); }
+      } catch (e) {}
+    })();
+  }, []);
+
+  const saveSwapSelections = (newSwaps) => {
+    try { localStorage.setItem(ALT_SWAPS_KEY, JSON.stringify(newSwaps)); } catch (e) {}
+  };
+
+  const selectSwap = (schedIdx, exIdx, exerciseName) => {
+    const key = `${schedIdx}-${exIdx}`;
+    const newSwaps = { ...swapSelections };
+    if (exerciseName === null) {
+      delete newSwaps[key];
+    } else {
+      newSwaps[key] = exerciseName;
+    }
+    setSwapSelections(newSwaps);
+    saveSwapSelections(newSwaps);
+    setOpenSwapPicker(null);
+  };
+
+  const getSwapSelection = (schedIdx, exIdx) => swapSelections[`${schedIdx}-${exIdx}`] || null;
+  const isUsingAlt = (schedIdx, exIdx) => !!swapSelections[`${schedIdx}-${exIdx}`];
+
+  // ── Auto-progression state ──
+  // progression: { "exName": { suggestedWeight: number, lastRating: string, streak: number } }
+  const [progression, setProgression] = useState({});
+
+  useState(() => {
+    (async () => {
+      try {
+        const v = localStorage.getItem(PROGRESSION_KEY);
+        if (v) { const p = JSON.parse(v); if (p && typeof p === "object") setProgression(p); }
+      } catch (e) {}
+    })();
+  }, []);
+
+  const saveProgression = (newProg) => {
+    try { localStorage.setItem(PROGRESSION_KEY, JSON.stringify(newProg)); } catch (e) {}
+  };
+
+  // Called when a log is saved — compute new progression suggestion
+  const computeProgression = (exName, logEntries, baseWeightStr) => {
+    if (!logEntries || !logEntries.length) return;
+    const ratings = logEntries.map(s => s.feeling).filter(Boolean);
+    if (!ratings.length) return;
+
+    // Parse the current base weight (strip non-numeric except dot)
+    const currentWeight = parseFloat((baseWeightStr || "0").replace(/[^0-9.]/g, "")) || 0;
+    const unit = (baseWeightStr || "").replace(/[0-9. ]/g, "").trim();
+    const isBothHands = unit.includes("each") || unit.includes("each hand");
+    const increment = isBothHands ? 1 : 2.5;
+
+    const easyCount = ratings.filter(r => r === "easy").length;
+    const hardCount = ratings.filter(r => r === "hard").length;
+    const goodCount = ratings.filter(r => r === "good").length;
+    const total = ratings.length;
+
+    let newWeight = currentWeight;
+    let advice = "";
+    let badge = "";
+
+    if (easyCount >= Math.ceil(total * 0.6)) {
+      // Majority easy — increase
+      newWeight = currentWeight + increment;
+      advice = `Most sets felt easy. Try ${newWeight} ${unit} next session.`;
+      badge = "🟢 Go heavier";
+    } else if (hardCount >= Math.ceil(total * 0.6)) {
+      // Majority hard — decrease
+      newWeight = Math.max(currentWeight - increment, 0);
+      advice = `Most sets were a struggle. Drop to ${newWeight} ${unit} next session and focus on form.`;
+      badge = "🔴 Ease back";
+    } else {
+      // Mixed / good — stay the same
+      newWeight = currentWeight;
+      advice = `Good effort. Stay at ${currentWeight} ${unit} next session and aim to complete all reps cleanly.`;
+      badge = "🟡 Stay the same";
+    }
+
+    const newProg = {
+      ...progression,
+      [exName]: { suggestedWeight: newWeight, unit, advice, badge, lastUpdated: Date.now() }
+    };
+    setProgression(newProg);
+    saveProgression(newProg);
   };
 
   const weekGroups = useMemo(() => {
@@ -913,7 +1305,25 @@ export default function App() {
                   <strong>🤸 Before you start:</strong> 5 min treadmill walk + 1–2 warm-up sets of your first exercise at 50% weight. Tap the warm-up guide above for details.
                 </div>
 
-                <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, color: "#888", textTransform: "uppercase", marginBottom: 10 }}>Exercises this session</div>
+                {(() => {
+                  const exNames2 = WEEKLY_ROTATION[selEntry.group][(selEntry.weekNum || 1) - 1] || [];
+                  const doneCount = exNames2.filter((_, idx2) => isExDone(selected, idx2)).length;
+                  const totalCount = exNames2.length;
+                  const allDone = doneCount === totalCount;
+                  return (
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 10 }}>
+                      <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, color: "#888", textTransform: "uppercase" }}>
+                        Exercises this session
+                      </div>
+                      <div style={{ fontSize: 11, fontWeight: 700,
+                        color: allDone ? "#2F7E4A" : "#888",
+                        background: allDone ? "#E8F5E9" : "#F5F5F5",
+                        borderRadius: 8, padding: "3px 10px" }}>
+                        {allDone ? "🎉 All done!" : `${doneCount} / ${totalCount} done`}
+                      </div>
+                    </div>
+                  );
+                })()}
 
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {exNames.map((exName, i) => {
@@ -929,16 +1339,39 @@ export default function App() {
                     const guideOpen = openGuide === guideKey;
                     const isCustomised = exData.isCustom;
 
+                    // Swap logic
+                    const swapKey = `${selected}-${i}`;
+                    const swapPickerOpen = openSwapPicker === swapKey;
+                    const selectedSwap = getSwapSelection(selected, i);
+                    const usingAlt = !!selectedSwap;
+                    const activeExName = selectedSwap || displayName;
+                    const progData = progression[displayName];
+
+                    const exIsDone = isExDone(selected, i);
+
                     return (
-                      <div key={i} style={{ borderRadius: 10, overflow: "hidden", border: `1px solid ${guideOpen ? group.color : isCustomised ? "#4CAF50" : "#eee"}` }}>
+                      <div key={i} style={{ borderRadius: 10, overflow: "hidden",
+                        border: `1px solid ${exIsDone ? "#4CAF50" : guideOpen ? group.color : isCustomised ? "#4CAF50" : usingAlt ? "#C07A20" : "#eee"}`,
+                        opacity: exIsDone ? 0.75 : 1, transition: "all 0.2s" }}>
                         {/* Exercise row */}
-                        <div style={{ padding: "10px 12px", background: guideOpen ? group.bg : "#fff" }}>
+                        <div style={{ padding: "10px 12px", background: exIsDone ? "#F0FFF4" : guideOpen ? group.bg : "#fff" }}>
                           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                             <div style={{ flex: 1 }}>
-                              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                                <div style={{ fontWeight: 700, fontSize: 13, color: "#1C1C1C" }}>{displayName}</div>
-                                {isCustomised && <span style={{ fontSize: 9, background: "#E8F5E9", color: "#4CAF50", borderRadius: 4, padding: "1px 5px", fontWeight: 700 }}>EDITED</span>}
+                              <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+                                <div style={{ fontWeight: 700, fontSize: 13,
+                                  color: exIsDone ? "#2F7E4A" : usingAlt ? "#C07A20" : "#1C1C1C",
+                                  textDecoration: exIsDone ? "line-through" : "none" }}>
+                                  {activeExName}
+                                </div>
+                                {exIsDone && <span style={{ fontSize: 12 }}>✅</span>}
+                                {isCustomised && !exIsDone && <span style={{ fontSize: 9, background: "#E8F5E9", color: "#4CAF50", borderRadius: 4, padding: "1px 5px", fontWeight: 700 }}>EDITED</span>}
+                                {usingAlt && !exIsDone && <span style={{ fontSize: 9, background: "#FBF5EE", color: "#C07A20", borderRadius: 4, padding: "1px 5px", fontWeight: 700 }}>SWAPPED</span>}
                               </div>
+                              {usingAlt && (
+                                <div style={{ fontSize: 10, color: "#aaa", marginTop: 1 }}>
+                                  Original: {displayName}
+                                </div>
+                              )}
                               <div style={{ display: "flex", gap: 6, marginTop: 5, flexWrap: "wrap" }}>
                                 <span style={{ fontSize: 11, background: "#F5F5F5", borderRadius: 5, padding: "2px 7px", color: "#555" }}>
                                   {displaySets} sets × {displayReps} reps
@@ -950,6 +1383,17 @@ export default function App() {
                               {plateNote && (
                                 <div style={{ fontSize: 10, color: "#888", marginTop: 4 }}>📐 {plateNote}</div>
                               )}
+                              {/* Auto-progression badge */}
+                              {progData && (
+                                <div style={{ marginTop: 6, background: progData.badge.includes("heavier") ? "#EEF8F2" : progData.badge.includes("Ease") ? "#FFF0EE" : "#FFF8E1",
+                                  borderRadius: 6, padding: "4px 8px", display: "inline-block" }}>
+                                  <span style={{ fontSize: 10, fontWeight: 700,
+                                    color: progData.badge.includes("heavier") ? "#2F7E4A" : progData.badge.includes("Ease") ? "#E8533F" : "#C07A20" }}>
+                                    {progData.badge}
+                                  </span>
+                                  <span style={{ fontSize: 10, color: "#666", marginLeft: 4 }}>{progData.advice}</span>
+                                </div>
+                              )}
                               {/* Log summary */}
                               {(() => {
                                 const logKey = getLogKey(selected, i);
@@ -959,23 +1403,46 @@ export default function App() {
                                 if (!filled.length) return null;
                                 return (
                                   <div style={{ marginTop: 6, display: "flex", flexWrap: "wrap", gap: 4 }}>
-                                    {filled.map((s, si) => (
-                                      <span key={si} style={{ fontSize: 10, background: "#EEF4FB", color: "#1A6FA8",
-                                        borderRadius: 5, padding: "2px 7px", fontWeight: 600 }}>
-                                        Set {si+1}: {s.weight && `${s.weight}`}{s.weight && s.reps && " · "}{s.reps && `${s.reps} reps`}{s.note && ` (${s.note})`}
-                                      </span>
-                                    ))}
+                                    {filled.map((s, si) => {
+                                      const feelingColor = s.feeling === "easy" ? "#2F7E4A" : s.feeling === "hard" ? "#E8533F" : "#C07A20";
+                                      const feelingBg = s.feeling === "easy" ? "#EEF8F2" : s.feeling === "hard" ? "#FFF0EE" : "#FFF8E1";
+                                      return (
+                                        <span key={si} style={{ fontSize: 10, background: "#EEF4FB", color: "#1A6FA8",
+                                          borderRadius: 5, padding: "2px 7px", fontWeight: 600 }}>
+                                          S{si+1}: {s.weight}{s.weight && s.reps ? " · " : ""}{s.reps && `${s.reps}r`}
+                                          {s.feeling && <span style={{ marginLeft: 3, background: feelingBg, color: feelingColor, borderRadius: 3, padding: "0 3px" }}>
+                                            {s.feeling === "easy" ? "💪" : s.feeling === "hard" ? "😅" : "👍"}
+                                          </span>}
+                                        </span>
+                                      );
+                                    })}
                                   </div>
                                 );
                               })()}
                             </div>
-                            <div style={{ display: "flex", gap: 6, marginLeft: 8, marginTop: 2 }}>
+                            <div style={{ display: "flex", flexDirection: "column", gap: 5, marginLeft: 8, marginTop: 2 }}>
+                              {/* Swap picker button */}
+                              {ex.swaps && ex.swaps.length > 0 && (
+                                <button onClick={() => setOpenSwapPicker(swapPickerOpen ? null : swapKey)}
+                                  style={{ background: usingAlt ? "#C07A20" : "#FBF5EE", color: usingAlt ? "#fff" : "#C07A20",
+                                    border: `1px solid #C07A20`, borderRadius: 8, padding: "5px 8px",
+                                    fontSize: 9, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap" }}>
+                                  {swapPickerOpen ? "✕ Close" : usingAlt ? "⟳ Swap" : "⟳ Swap"}
+                                </button>
+                              )}
+                              {/* Done tick button */}
+                              <button onClick={() => toggleExDone(selected, i, activeExName)}
+                                style={{ background: exIsDone ? "#4CAF50" : "#F0FFF4",
+                                  color: exIsDone ? "#fff" : "#4CAF50",
+                                  border: "1px solid #4CAF50", borderRadius: 8, padding: "5px 8px",
+                                  fontSize: 11, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap" }}>
+                                {exIsDone ? "✅" : "☐"}
+                              </button>
                               {editMode && (
-                                <button
-                                  onClick={() => openEditForm(selEntry.group, weekIdx, i)}
+                                <button onClick={() => openEditForm(selEntry.group, weekIdx, i)}
                                   style={{ background: "#4CAF50", color: "#fff", border: "none", borderRadius: 8,
-                                    padding: "5px 9px", fontSize: 10, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap" }}>
-                                  ✏️
+                                    padding: "5px 8px", fontSize: 9, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap" }}>
+                                  ✏️ Edit
                                 </button>
                               )}
                               {/* Log button */}
@@ -984,23 +1451,21 @@ export default function App() {
                                 const hasLog = logs[logKey]?.some(s => s.weight || s.reps);
                                 const numSets = parseInt(displaySets) || 3;
                                 return (
-                                  <button
-                                    onClick={() => openLog(selected, i, numSets)}
+                                  <button onClick={() => openLog(selected, i, numSets, activeExName, displayWeight)}
                                     style={{ background: hasLog ? "#EEF4FB" : "#F0F0F0",
                                       color: hasLog ? "#1A6FA8" : "#555",
                                       border: hasLog ? "1px solid #1A6FA8" : "none",
-                                      borderRadius: 8, padding: "5px 9px", fontSize: 10, fontWeight: 700,
+                                      borderRadius: 8, padding: "5px 8px", fontSize: 9, fontWeight: 700,
                                       cursor: "pointer", whiteSpace: "nowrap" }}>
-                                    {hasLog ? "📝✓" : "📝"}
+                                    {hasLog ? "📝✓" : "📝 Log"}
                                   </button>
                                 );
                               })()}
-                              <button
-                                onClick={() => setOpenGuide(guideOpen ? null : guideKey)}
+                              <button onClick={() => setOpenGuide(guideOpen ? null : guideKey)}
                                 style={{ background: guideOpen ? group.color : "#F0F0F0", color: guideOpen ? "#fff" : "#555",
-                                  border: "none", borderRadius: 8, padding: "5px 9px", fontSize: 10, fontWeight: 700,
+                                  border: "none", borderRadius: 8, padding: "5px 8px", fontSize: 9, fontWeight: 700,
                                   cursor: "pointer", whiteSpace: "nowrap" }}>
-                                {guideOpen ? "✕" : "📖"}
+                                {guideOpen ? "✕" : "📖 Guide"}
                               </button>
                             </div>
                           </div>
@@ -1019,12 +1484,43 @@ export default function App() {
                               <div style={{ fontSize: 10, fontWeight: 700, color: group.color, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>📖 How to Perform</div>
                               <div style={{ fontSize: 12, color: "#444", lineHeight: 1.6 }}>{ex.guide || "Refer to your coach or a trainer for guidance on this exercise."}</div>
                             </div>
-                            {ex.alt && (
-                              <div>
-                                <div style={{ fontSize: 10, fontWeight: 700, color: "#888", textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>⟳ No Equipment Alternative</div>
-                                <div style={{ fontSize: 12, color: "#666", lineHeight: 1.6 }}>{ex.alt}</div>
-                              </div>
-                            )}
+                          </div>
+                        )}
+
+                        {/* Swap picker panel */}
+                        {swapPickerOpen && ex.swaps && (
+                          <div style={{ background: "#FBF5EE", borderTop: "1px dashed #C07A20", padding: "12px 14px" }}>
+                            <div style={{ fontSize: 10, fontWeight: 700, color: "#C07A20", textTransform: "uppercase", letterSpacing: 1, marginBottom: 10 }}>
+                              ⟳ Swap Exercise — choose one
+                            </div>
+                            <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+                              {/* Default option */}
+                              <button
+                                onClick={() => selectSwap(selected, i, null)}
+                                style={{
+                                  padding: "10px 14px", borderRadius: 9, textAlign: "left", cursor: "pointer",
+                                  background: !selectedSwap ? "#C07A20" : "#fff",
+                                  border: `1px solid ${!selectedSwap ? "#C07A20" : "#ddd"}`,
+                                  color: !selectedSwap ? "#fff" : "#444",
+                                  fontSize: 12, fontWeight: !selectedSwap ? 700 : 400,
+                                }}>
+                                {!selectedSwap && "✓ "}{displayName} <span style={{ fontSize: 10, opacity: 0.7 }}>(default)</span>
+                              </button>
+                              {ex.swaps.map((swapName, si) => (
+                                <button
+                                  key={si}
+                                  onClick={() => selectSwap(selected, i, swapName)}
+                                  style={{
+                                    padding: "10px 14px", borderRadius: 9, textAlign: "left", cursor: "pointer",
+                                    background: selectedSwap === swapName ? "#C07A20" : "#fff",
+                                    border: `1px solid ${selectedSwap === swapName ? "#C07A20" : "#ddd"}`,
+                                    color: selectedSwap === swapName ? "#fff" : "#444",
+                                    fontSize: 12, fontWeight: selectedSwap === swapName ? 700 : 400,
+                                  }}>
+                                  {selectedSwap === swapName && "✓ "}{swapName}
+                                </button>
+                              ))}
+                            </div>
                           </div>
                         )}
                       </div>
@@ -1078,57 +1574,106 @@ export default function App() {
         </div>
       )}
 
+      {/* ── REST TIMER ── */}
+      {restTimer && (
+        <div style={{ position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)",
+          zIndex: 300, background: "#111", borderRadius: 16, padding: "14px 20px",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.4)", minWidth: 220, textAlign: "center" }}>
+          <div style={{ fontSize: 10, color: "#888", textTransform: "uppercase", letterSpacing: 2, marginBottom: 4 }}>
+            ⏱ Rest Timer
+          </div>
+          <div style={{ fontSize: 11, color: "#aaa", marginBottom: 8, maxWidth: 200 }}>
+            {restTimer.exName}
+          </div>
+          {/* Countdown ring */}
+          <div style={{ position: "relative", width: 80, height: 80, margin: "0 auto 10px" }}>
+            <svg width="80" height="80" style={{ transform: "rotate(-90deg)" }}>
+              <circle cx="40" cy="40" r="34" fill="none" stroke="#333" strokeWidth="6" />
+              <circle cx="40" cy="40" r="34" fill="none"
+                stroke={restTimer.seconds > restTimer.total * 0.4 ? "#4CAF50" : restTimer.seconds > restTimer.total * 0.2 ? "#C07A20" : "#E8533F"}
+                strokeWidth="6"
+                strokeDasharray={`${2 * Math.PI * 34}`}
+                strokeDashoffset={`${2 * Math.PI * 34 * (1 - restTimer.seconds / restTimer.total)}`}
+                strokeLinecap="round"
+                style={{ transition: "stroke-dashoffset 1s linear, stroke 0.5s" }} />
+            </svg>
+            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <span style={{ fontSize: 22, fontWeight: 800, color: "#fff" }}>{restTimer.seconds}</span>
+            </div>
+          </div>
+          <div style={{ fontSize: 11, color: "#888", marginBottom: 10 }}>
+            {restTimer.seconds > 0 ? "seconds remaining" : "Rest complete — next set!"}
+          </div>
+          <button onClick={cancelTimer}
+            style={{ background: "#333", color: "#aaa", border: "none", borderRadius: 8,
+              padding: "6px 18px", fontSize: 11, cursor: "pointer" }}>
+            Skip
+          </button>
+        </div>
+      )}
+
       {/* ── LOG MODAL ── */}
       {activeLog && (
         <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 200, display: "flex", alignItems: "flex-end" }}>
-          <div style={{ background: "#fff", width: "100%", borderRadius: "16px 16px 0 0", padding: "20px 16px 36px", maxHeight: "85vh", overflowY: "auto" }}>
+          <div style={{ background: "#fff", width: "100%", borderRadius: "16px 16px 0 0", padding: "20px 16px 36px", maxHeight: "90vh", overflowY: "auto" }}>
             <div style={{ fontSize: 13, fontWeight: 800, marginBottom: 2 }}>📝 Log Actual Performance</div>
-            <div style={{ fontSize: 11, color: "#888", marginBottom: 16 }}>
-              Enter what you actually lifted. Leave blank if you skipped a set.
+            <div style={{ fontSize: 11, color: "#888", marginBottom: 4 }}>
+              {activeLogMeta.exName && <span style={{ fontWeight: 700, color: "#1C1C1C" }}>{activeLogMeta.exName}</span>}
             </div>
-
-            {/* Column headers */}
-            <div style={{ display: "grid", gridTemplateColumns: "36px 1fr 1fr 1fr", gap: 8, marginBottom: 8 }}>
-              {["Set", "Weight", "Reps", "Note"].map(h => (
-                <div key={h} style={{ fontSize: 10, fontWeight: 700, color: "#aaa", textTransform: "uppercase" }}>{h}</div>
-              ))}
-            </div>
+            <div style={{ fontSize: 11, color: "#aaa", marginBottom: 16 }}>Enter weight, reps and how each set felt.</div>
 
             {logDraft.map((s, i) => (
-              <div key={i} style={{ display: "grid", gridTemplateColumns: "36px 1fr 1fr 1fr", gap: 8, marginBottom: 10, alignItems: "center" }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: "#888", textAlign: "center",
-                  background: "#F5F5F5", borderRadius: 6, padding: "8px 0" }}>{i + 1}</div>
-                <input value={s.weight} onChange={e => updateLogDraft(i, "weight", e.target.value)}
-                  placeholder="e.g. 50kg" inputMode="decimal"
-                  style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd", fontSize: 12, width: "100%", boxSizing: "border-box" }} />
-                <input value={s.reps} onChange={e => updateLogDraft(i, "reps", e.target.value)}
-                  placeholder="e.g. 8" inputMode="numeric"
-                  style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd", fontSize: 12, width: "100%", boxSizing: "border-box" }} />
-                <input value={s.note} onChange={e => updateLogDraft(i, "note", e.target.value)}
-                  placeholder="e.g. easy"
-                  style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd", fontSize: 12, width: "100%", boxSizing: "border-box" }} />
+              <div key={i} style={{ background: "#FAFAFA", borderRadius: 10, padding: "10px 12px", marginBottom: 10 }}>
+                <div style={{ fontSize: 10, fontWeight: 700, color: "#aaa", marginBottom: 8 }}>SET {i + 1}</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginBottom: 10 }}>
+                  <div>
+                    <div style={{ fontSize: 10, color: "#888", marginBottom: 4 }}>WEIGHT</div>
+                    <input value={s.weight} onChange={e => updateLogDraft(i, "weight", e.target.value)}
+                      placeholder="e.g. 50kg" inputMode="decimal"
+                      style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd", fontSize: 13,
+                        width: "100%", boxSizing: "border-box", background: "#fff" }} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 10, color: "#888", marginBottom: 4 }}>REPS</div>
+                    <input value={s.reps} onChange={e => updateLogDraft(i, "reps", e.target.value)}
+                      placeholder="e.g. 8" inputMode="numeric"
+                      style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd", fontSize: 13,
+                        width: "100%", boxSizing: "border-box", background: "#fff" }} />
+                  </div>
+                </div>
+                {/* Feeling buttons */}
+                <div style={{ fontSize: 10, color: "#888", marginBottom: 6 }}>HOW DID IT FEEL?</div>
+                <div style={{ display: "flex", gap: 8 }}>
+                  {[
+                    { val: "hard", label: "😅 Hard", bg: "#FFF0EE", active: "#E8533F", desc: "Struggled" },
+                    { val: "good", label: "👍 Good", bg: "#FFF8E1", active: "#C07A20", desc: "Manageable" },
+                    { val: "easy", label: "💪 Easy", bg: "#EEF8F2", active: "#2F7E4A", desc: "Could do more" },
+                  ].map(({ val, label, bg, active }) => (
+                    <button key={val} onClick={() => updateLogDraft(i, "feeling", s.feeling === val ? "" : val)}
+                      style={{ flex: 1, padding: "8px 4px", borderRadius: 8, border: `2px solid ${s.feeling === val ? active : "#eee"}`,
+                        background: s.feeling === val ? bg : "#fff", color: s.feeling === val ? active : "#888",
+                        fontSize: 11, fontWeight: s.feeling === val ? 700 : 400, cursor: "pointer", transition: "all 0.15s" }}>
+                      {label}
+                    </button>
+                  ))}
+                </div>
               </div>
             ))}
 
-            {/* Tip */}
-            <div style={{ background: "#FFF8E1", borderRadius: 8, padding: "8px 12px", marginTop: 4, marginBottom: 16, fontSize: 11, color: "#C07A20", lineHeight: 1.5 }}>
-              💡 If you hit all reps easily → go heavier next session. If you couldn't complete the reps → keep the same weight until you can.
-            </div>
-
-            <div style={{ display: "flex", gap: 10 }}>
+            <div style={{ display: "flex", gap: 10, marginTop: 4 }}>
               <button onClick={() => saveLog(activeLog)}
                 style={{ flex: 1, background: "#1A6FA8", color: "#fff", border: "none", borderRadius: 10,
-                  padding: "12px", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
-                Save Log
+                  padding: "13px", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
+                Save & Update Plan
               </button>
               <button onClick={() => clearLog(activeLog)}
                 style={{ background: "#FFF0EE", color: "#E8533F", border: "1px solid #E8533F", borderRadius: 10,
-                  padding: "12px 14px", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
+                  padding: "13px 14px", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
                 Clear
               </button>
               <button onClick={() => setActiveLog(null)}
                 style={{ background: "#F5F5F5", color: "#888", border: "none", borderRadius: 10,
-                  padding: "12px 14px", fontSize: 13, cursor: "pointer" }}>
+                  padding: "13px 14px", fontSize: 13, cursor: "pointer" }}>
                 Cancel
               </button>
             </div>
