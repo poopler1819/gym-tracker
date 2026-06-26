@@ -540,40 +540,43 @@ const WEEKLY_ROTATION = {
     ["Lat Pulldown", "Double DB Bent-Over Row", "Seated Cable Row", "Single-Arm DB Row", "Face Pull"],       // Wk10 deload
   ],
   Arms: [
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk1
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Concentration Curl"], // Wk2
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl"],// Wk3
-    ["Hammer Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],  // Wk4
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Incline Dumbbell Curl"],      // Wk5
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Concentration Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"], // Wk6
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk7
-    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],// Wk8
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Concentration Curl"],// Wk9
-    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Concentration Curl"],         // Wk10 deload
+    // Format: Bicep 1, Tricep 1 (heavy), Bicep 2, Tricep 2, Tricep 3 — always 2 bicep / 3 tricep
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],         // Wk1
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"], // Wk2
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],// Wk3
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],      // Wk4
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],         // Wk5
+    ["Incline Dumbbell Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],// Wk6
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Overhead Tricep Extension", "Tricep Rope Pushdown"],// Wk7
+    ["Hammer Curl", "Skull Crusher (EZ Bar)", "Barbell Bicep Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],         // Wk8
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Incline Dumbbell Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],// Wk9
+    ["Barbell Bicep Curl", "Skull Crusher (EZ Bar)", "Hammer Curl", "Tricep Rope Pushdown", "Overhead Tricep Extension"],         // Wk10 deload
   ],
   Legs: [
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk1
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Walking Lunge"],              // Wk2
-    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Walking Lunge", "Leg Curl (Machine)"],              // Wk3
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge"],              // Wk4
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk5
-    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Walking Lunge"],              // Wk6
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk7
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Walking Lunge"],              // Wk8
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk9
-    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Walking Lunge", "Leg Curl (Machine)"],              // Wk10 deload
+    // 5 exercises — Walking Lunge replaced by Standing Calf Raise for full muscle coverage
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk1
+    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk2
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Standing Calf Raise"],  // Wk3
+    ["Step-Up with Dumbbells", "Leg Press", "Leg Curl (Machine)", "Glute Bridge / Hip Thrust", "Standing Calf Raise"],  // Wk4
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk5
+    ["Step-Up with Dumbbells", "Leg Curl (Machine)", "Glute Bridge / Hip Thrust", "Leg Press", "Standing Calf Raise"],  // Wk6
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk7
+    ["Step-Up with Dumbbells", "Leg Press", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk8
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Curl (Machine)", "Leg Press", "Standing Calf Raise"],  // Wk9
+    ["Step-Up with Dumbbells", "Glute Bridge / Hip Thrust", "Leg Press", "Leg Curl (Machine)", "Standing Calf Raise"],  // Wk10 deload
   ],
   Shoulders: [
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk1
+    // Lateral Raise always before Arnold Press — keeps side delts fresh
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk1
     ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Front Raise"],      // Wk2
-    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug"],   // Wk3
+    ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Dumbbell Shrug"],   // Wk3
     ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Front Raise"],      // Wk4
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk5
-    ["Seated DB Shoulder Press", "Rear Delt Fly", "Arnold Press", "Lateral Raise", "Front Raise"],      // Wk6
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk7
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk5
+    ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Front Raise"],      // Wk6
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk7
     ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Front Raise"],      // Wk8
-    ["Seated DB Shoulder Press", "Arnold Press", "Rear Delt Fly", "Lateral Raise", "Dumbbell Shrug"],   // Wk9
-    ["Seated DB Shoulder Press", "Arnold Press", "Lateral Raise", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk10 deload
+    ["Seated DB Shoulder Press", "Lateral Raise", "Rear Delt Fly", "Arnold Press", "Dumbbell Shrug"],   // Wk9
+    ["Seated DB Shoulder Press", "Lateral Raise", "Arnold Press", "Rear Delt Fly", "Dumbbell Shrug"],   // Wk10 deload
   ],
 };
 
